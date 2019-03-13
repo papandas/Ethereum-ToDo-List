@@ -9,6 +9,9 @@ truffle compile
 To migrate 
 truffle migrate --reset
 
+To run test
+truffle test
+
 To enter truffle console
 truffle console
 

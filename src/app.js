@@ -1,12 +1,15 @@
 App = {
     loading: false,
+
     contracts: {},
+
     load: async () => {
         await App.loadWeb3();
         await App.loadAccount();
         await App.loadContract();
         await App.render();
     },
+
     loadWeb3: async () => {
         if (typeof web3 !== 'undefined') {
             App.web3Provider = web3.currentProvider
@@ -97,6 +100,16 @@ App = {
             // Show the task
             $newTaskTemplate.show()
         }
+    },
+
+    createTask: async () => {
+        App.setLoading(true)
+
+        const content = $('#newTask').val()
+
+        await App.todoList.createTask(content);
+
+        window.location.reload()
     },
 
     setLoading: (boolean) => {
