@@ -3,13 +3,13 @@
 Contract Address https://ropsten.etherscan.io/address/0x86c6e43752c6c98d4cd709f011e81202626494f9
 
 to set up truffle project
-truffle init
+`truffle init`
 
 To compile
-truffle compile
+`truffle compile`
 
 To migrate 
-truffle migrate --reset
+`truffle migrate --reset`
 
 To run test
 truffle test
