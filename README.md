@@ -12,31 +12,31 @@ To migrate
 `truffle migrate --reset`
 
 To run test
-truffle test
+`truffle test`
 
 To enter truffle console
-truffle console
+`truffle console`
 
 To exit truffle console
-.exit
+`.exit`
 
 Truffle Console Command
 ========================
 
 await used to handle async action/function
-todoList = await TodoList.deployed()
+`todoList = await TodoList.deployed()`
 
 to view the entire content
-todoList
+`todoList`
 
 to get the contract address
-todoList.address
+`todoList.address`
 
 to get the number of task count
-taskCount = await todoList.taskCount()
+`taskCount = await todoList.taskCount()`
 
 to view the number
-taskCount.toNumber()
+`taskCount.toNumber()`
 
 
 STEPS TO FOLLOW:
@@ -47,4 +47,4 @@ STEPS TO FOLLOW:
 4. List task in the test
 
 To get the list of tasks
-tasks = await todoList.tasks(1)
+`tasks = await todoList.tasks(1)`
